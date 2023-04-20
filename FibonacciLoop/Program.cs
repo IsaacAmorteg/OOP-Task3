@@ -6,14 +6,14 @@ namespace FibonacciLoop
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Please enter a natural number: ");
+            Console.Write("Please enter a natural number: ");
             int numberInput = int.Parse(Console.ReadLine());
 
             int a = 0;
             int b = 1;
             int c;
 
-            Console.WriteLine("{0} {1}", a, b);
+            Console.Write("{0} {1}", a, b);
 
             for (int i = 2; i< numberInput; i++)
             {
