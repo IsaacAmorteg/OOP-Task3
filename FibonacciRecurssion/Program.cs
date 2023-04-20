@@ -9,20 +9,19 @@ namespace FibonacciRecurssion
             Console.Write("Please enter a natural number: ");
             int numberInput = int.Parse(Console.ReadLine());
 
-           Console.Write("Test");
+           Console.Write("0 1");
+            FibonacciR(0, 1, numberInput); 
+                      
+        }
+        static void FibonacciR(int a, int b, int numberInput)
+        {
+            int c = a + b;
 
-            //for (int i = 2; i < numberInput; i++)
-            //{
-            //    c = a + b;
-             //   if (c > numberInput)
-               //     break;
+            if (c > numberInput) return;
 
-                //Console.Write(" {0}", c);
+            Console.Write(" {0}", c);
 
-                //a = b;
-                //b = c;
-
-           // }
+            FibonacciR(b, c, numberInput);
         }
     }
 }
